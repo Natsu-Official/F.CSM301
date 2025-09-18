@@ -1,4 +1,4 @@
-package Lab2.java;
+package Lab2;
 public class Algorithms {
     // Insertion Sort
     public static void insertionSort(int[] A) {

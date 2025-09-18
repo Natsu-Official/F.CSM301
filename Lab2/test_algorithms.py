@@ -1,5 +1,5 @@
 import unittest
-from algorithms import insertion_sort, merge_sort, binary_search, find_max
+from Lab2.algorithms import insertion_sort, merge_sort, binary_search, find_max
 
 class TestAlgorithms(unittest.TestCase):
     def test_insertion_sort(self):
