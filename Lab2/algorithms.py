@@ -9,6 +9,7 @@ def insertion_sort(A):
         A[j + 1] = key
     return A
 
+
 # merge_sort.py
 def merge_sort(A):
     if len(A) <= 1:
@@ -17,6 +18,7 @@ def merge_sort(A):
     left = merge_sort(A[:mid])
     right = merge_sort(A[mid:])
     return merge(left, right)
+
 
 def merge(left, right):
     result = []
@@ -32,6 +34,7 @@ def merge(left, right):
     result.extend(right[j:])
     return result
 
+
 # recursive binary search
 def binary_search(arr, target, low=0, high=None):
     if high is None:
@@ -42,9 +45,10 @@ def binary_search(arr, target, low=0, high=None):
     if arr[mid] == target:
         return mid
     elif arr[mid] > target:
-        return binary_search(arr, target, low, mid-1)
+        return binary_search(arr, target, low, mid - 1)
     else:
-        return binary_search(arr, target, mid+1, high)
+        return binary_search(arr, target, mid + 1, high)
+
 
 # divide & conquer max
 def find_max(arr, low=0, high=None):
@@ -54,5 +58,5 @@ def find_max(arr, low=0, high=None):
         return arr[low]
     mid = (low + high) // 2
     left_max = find_max(arr, low, mid)
-    right_max = find_max(arr, mid+1, high)
+    right_max = find_max(arr, mid + 1, high)
     return max(left_max, right_max)

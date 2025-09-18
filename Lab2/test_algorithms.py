@@ -1,6 +1,7 @@
 import unittest
 from Lab2.algorithms import insertion_sort, merge_sort, binary_search, find_max
 
+
 class TestAlgorithms(unittest.TestCase):
     def test_insertion_sort(self):
         self.assertEqual(insertion_sort([5, 2, 9, 1]), [1, 2, 5, 9])
@@ -16,6 +17,7 @@ class TestAlgorithms(unittest.TestCase):
     def test_find_max(self):
         arr = [3, 9, 2, 7, 5]
         self.assertEqual(find_max(arr), 9)
+
 
 if __name__ == "__main__":
     unittest.main()
